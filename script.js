@@ -1,6 +1,7 @@
 
 //submit text in the text box
 var form = document.querySelector("form");
+form.input.focus();
 form.addEventListener("submit", function(e) {
 	e.preventDefault();
 	toDoList();
@@ -21,4 +22,5 @@ function toDoList(){
 	var list = document.getElementById("toDoList");
 	list.appendChild(li);
 	input.value = "";
+	input.focus();
 }
